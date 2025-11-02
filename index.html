@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="جاكيت نايكي ذو الوجهين - تصميم فريد يجمع بين الأناقة والدفء. وجه أسود مبطن ووجه صوفي أبيض.">
+    <meta name="keywords" content="جاكيت نايكي، جاكيت شتوي، ملابس رياضية، double face jacket">
+    <title>جاكيت نايكي ذو الوجهين | JACKET DOUBLE FACE NIKE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        nav .logo span {
+            color: #ff6b6b;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #ff6b6b;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #fff;
+            padding: 6rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255, 107, 107, 0.1) 0%, transparent 70%);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero h1 span {
+            color: #ff6b6b;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ff5252 100%);
+            color: #fff;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+
+        .hero .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 107, 107, 0.4);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 5rem 2rem;
+            background: #fff;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #1a1a1a;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            border-color: #ff6b6b;
+            box-shadow: 0 10px 25px rgba(255, 107, 107, 0.15);
+        }
+
+        .feature-card .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: #1a1a1a;
+        }
+
+        .feature-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            padding: 5rem 2rem;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .gallery h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #1a1a1a;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+            background: #fff;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item-caption {
+            padding: 1.5rem;
+            background: #fff;
+            text-align: center;
+        }
+
+        .gallery-item-caption h3 {
+            color: #1a1a1a;
+            margin-bottom: 0.5rem;
+        }
+
+        .gallery-item-caption p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Specifications Section */
+        .specs {
+            padding: 5rem 2rem;
+            background: #fff;
+        }
+
+        .specs h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #1a1a1a;
+        }
+
+        .specs-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .specs-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #1a1a1a;
+        }
+
+        .spec-item {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .spec-item:last-child {
+            border-bottom: none;
+        }
+
+        .spec-label {
+            font-weight: bold;
+            color: #ff6b6b;
+            min-width: 120px;
+        }
+
+        .spec-value {
+            color: #666;
+        }
+
+        .specs-image {
+            text-align: center;
+        }
+
+        .specs-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Sizes Section */
+        .sizes {
+            padding: 2rem;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 15px;
+            margin-bottom: 2rem;
+        }
+
+        .sizes h3 {
+            margin-bottom: 1.5rem;
+            color: #1a1a1a;
+        }
+
+        .size-options {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .size-btn {
+            padding: 0.75rem 1.5rem;
+            border: 2px solid #ddd;
+            background: #fff;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+            color: #666;
+        }
+
+        .size-btn:hover {
+            border-color: #ff6b6b;
+            color: #ff6b6b;
+        }
+
+        .size-btn.active {
+            background: #ff6b6b;
+            color: #fff;
+            border-color: #ff6b6b;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 5rem 2rem;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #fff;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .cta-section .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ff5252 100%);
+            color: #fff;
+            padding: 1.2rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-section .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 107, 107, 0.4);
+        }
+
+        /* Form Section */
+        .form-section {
+            margin-top: 3rem;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .form-section h3 {
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            background: #fff;
+            box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.3);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        footer a {
+            color: #ff6b6b;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .features-grid,
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .specs-container {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 3rem 1rem;
+            }
+
+            .features,
+            .gallery,
+            .specs,
+            .cta-section {
+                padding: 3rem 1rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .feature-card {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .feature-card:nth-child(1) { animation-delay: 0.1s; }
+        .feature-card:nth-child(2) { animation-delay: 0.2s; }
+        .feature-card:nth-child(3) { animation-delay: 0.3s; }
+        .feature-card:nth-child(4) { animation-delay: 0.4s; }
+
+        /* Badge */
+        .badge {
+            display: inline-block;
+            background: #ff6b6b;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        /* Price Section */
+        .price-section {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .price {
+            font-size: 2.5rem;
+            color: #ff6b6b;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+
+        .original-price {
+            font-size: 1.3rem;
+            color: #999;
+            text-decoration: line-through;
+            margin-right: 1rem;
+        }
+
+        .discount {
+            display: inline-block;
+            background: #ff6b6b;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <span>✓</span> Nike Double Face
+            </div>
+            <ul>
+                <li><a href="#features">المميزات</a></li>
+                <li><a href="#gallery">المعرض</a></li>
+                <li><a href="#specs">المواصفات</a></li>
+                <li><a href="#order">الطلب</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="badge">عرض حصري محدود الوقت</div>
+            <h1>جاكيت نايكي <span>ذو الوجهين</span></h1>
+            <p>اكتشف الجاكيت الثوري الذي يمنحك مظهرين مختلفين تمامًا. وجه مبطن مقاوم للماء ووجه صوفي ناعم لمضاعفة الدفء والستايل!</p>
+            <button class="cta-button" onclick="document.getElementById('order').scrollIntoView();">اطلب الآن</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2>لماذا تحتاج هذا الجاكيت؟</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon">🎨</div>
+                    <h3>تصميم ثنائي الوجه</h3>
+                    <p>وجه أسود مبطن كلاسيكي ووجه صوفي أبيض جريء. غيّر مظهرك حسب مزاجك!</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🔥</div>
+                    <h3>دفء لا مثيل له</h3>
+                    <p>حشوة مبطنة عالية الجودة وصوف شيربا ناعم يوفران عزلًا ممتازًا ضد البرد.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">✓</div>
+                    <h3>جودة نايكي الأصلية</h3>
+                    <p>شعار نايكي مطرز على كلا الوجهين لضمان الأناقة والعلامة التجارية الموثوقة.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">💼</div>
+                    <h3>عملي ومريح</h3>
+                    <p>سحاب كامل، ياقة عالية لحماية الرقبة، وجيوب عملية لتخزين متعلقاتك.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2>معرض الصور</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="IMG-20251017-WA0025.jpg" alt="الوجه الأسود المبطن مع الصوف الداخلي">
+                    <div class="gallery-item-caption">
+                        <h3>الوجه الأسود</h3>
+                        <p>الدفء والأناقة الكلاسيكية</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG-20251017-WA0023(1).jpg" alt="الوجه الأبيض المبطن">
+                    <div class="gallery-item-caption">
+                        <h3>الوجه الأبيض</h3>
+                        <p>المظهر العصري والمختلف</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG-20251017-WA0022.jpg" alt="عرض للوجهين معًا">
+                    <div class="gallery-item-caption">
+                        <h3>الوجهان معًا</h3>
+                        <p>خاصية الوجهين الفريدة</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG-20251017-WA0033.jpg" alt="الوجه الصوفي الأبيض بالكامل">
+                    <div class="gallery-item-caption">
+                        <h3>الصوف الناعم</h3>
+                        <p>الستايل الجريء والمريح</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section class="specs" id="specs">
+        <div class="container">
+            <h2>تفاصيل المنتج</h2>
+            <div class="specs-container">
+                <div class="specs-content">
+                    <h3>المواصفات الفنية</h3>
+                    <div class="spec-item">
+                        <span class="spec-label">المادة الخارجية:</span>
+                        <span class="spec-value">بوليستر مقاوم للماء</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">المادة الداخلية:</span>
+                        <span class="spec-value">صوف شيربا (Sherpa Fleece) ناعم</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">الألوان:</span>
+                        <span class="spec-value">أسود/أبيض (ثنائي الوجه)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">المقاسات المتوفرة:</span>
+                        <span class="spec-value">S, M, L, XL, XXL</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">الميزات الإضافية:</span>
+                        <span class="spec-value">سحاب كامل، ياقة عالية، جيوب عملية</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">العلامة التجارية:</span>
+                        <span class="spec-value">Nike (نايكي)</span>
+                    </div>
+                </div>
+                <div class="specs-image">
+                    <img src="IMG-20251017-WA0033.jpg" alt="صورة تفصيلية للمنتج">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA and Order Section -->
+    <section class="cta-section" id="order">
+        <div class="container">
+            <h2>لا تفوت فرصة الحصول على جاكيت موسمين بسعر واحد!</h2>
+            <p>الكمية محدودة جدًا. اختر مقاسك الآن واستمتع بالشحن السريع والآمن.</p>
+            
+            <div class="form-section">
+                <h3>نموذج الطلب</h3>
+                <form id="orderForm" onsubmit="handleSubmit(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">الاسم الكامل *</label>
+                            <input type="text" id="name" name="name" required placeholder="أدخل اسمك الكامل">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">رقم الهاتف *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="أدخل رقم هاتفك">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="size">اختر المقاس *</label>
+                            <select id="size" name="size" required>
+                                <option value="">-- اختر المقاس --</option>
+                                <option value="S">S (صغير)</option>
+                                <option value="M">M (متوسط)</option>
+                                <option value="L">L (كبير)</option>
+                                <option value="XL">XL (كبير جدًا)</option>
+                                <option value="XXL">XXL (كبير جدًا جدًا)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity">الكمية *</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="5" value="1" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني (اختياري)</label>
+                        <input type="email" id="email" name="email" placeholder="أدخل بريدك الإلكتروني">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">عنوان التوصيل *</label>
+                        <input type="text" id="address" name="address" required placeholder="أدخل عنوانك الكامل">
+                    </div>
+                    <button type="submit" class="cta-button" style="width: 100%; margin-top: 1rem;">أضف إلى السلة وأتمم الطلب</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 جاكيت نايكي ذو الوجهين. جميع الحقوق محفوظة.</p>
+        <p>للتواصل: <a href="mailto:info@nike-jacket.com">info@nike-jacket.com</a> | الهاتف: +966 50 123 4567</p>
+        <p>شحن سريع | ضمان الجودة | استرجاع آمن خلال 30 يوم</p>
+    </footer>
+
+    <script>
+        // Form submission handler
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const size = document.getElementById('size').value;
+            const quantity = document.getElementById('quantity').value;
+            const email = document.getElementById('email').value;
+            const address = document.getElementById('address').value;
+            
+            // Create WhatsApp message
+            const message = `مرحبًا، أود طلب جاكيت نايكي ذو الوجهين\n\nالبيانات:\nالاسم: ${name}\nرقم الهاتف: ${phone}\nالمقاس: ${size}\nالكمية: ${quantity}\nالبريد الإلكتروني: ${email || 'لم يتم إدخاله'}\nعنوان التوصيل: ${address}`;
+            
+            const whatsappUrl = `https://wa.me/966501234567?text=${encodeURIComponent(message)}`;
+            
+            // Show confirmation
+            alert('شكرًا لطلبك! سيتم توجيهك إلى WhatsApp لتأكيد الطلب.');
+            window.open(whatsappUrl, '_blank');
+            
+            // Reset form
+            document.getElementById('orderForm').reset();
+        }
+
+        // Size button selection
+        document.addEventListener('DOMContentLoaded', function() {
+            const sizeButtons = document.querySelectorAll('.size-btn');
+            sizeButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    sizeButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    document.getElementById('size').value = this.textContent.trim();
+                });
+            });
+        });
+    </script>
+</body>
+</html>
