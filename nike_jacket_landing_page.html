@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جاكيت نايك دوبل فاس - الوجهين المزدوجين | توصيل مجاني</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #000 0%, #1a1a1a 100%);
+            color: white;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .free-shipping {
+            background: #ff6b35;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #000 0%, #1a1a1a 50%, #ff6b35 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 900;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .hero-subtitle {
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: #fff;
+            font-weight: 300;
+        }
+        
+        .price-tag {
+            font-size: 36px;
+            font-weight: bold;
+            color: #ff6b35;
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .cta-button {
+            background: #ff6b35;
+            color: white;
+            border: none;
+            padding: 18px 50px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+            margin-top: 20px;
+        }
+        
+        .cta-button:hover {
+            background: #ff5722;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.6);
+        }
+        
+        /* Gallery Section */
+        .gallery {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+        
+        .gallery h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #000;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .gallery-item {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        .gallery-caption {
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            color: #ff6b35;
+        }
+        
+        /* Features Section */
+        .features {
+            background: white;
+            padding: 60px 20px;
+            margin: 40px 0;
+        }
+        
+        .features-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .features h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 50px;
+            color: #000;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 5px solid #ff6b35;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateX(10px);
+        }
+        
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        
+        .feature-card h3 {
+            color: #000;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        
+        .feature-card p {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        
+        /* Benefits Section */
+        .benefits {
+            background: linear-gradient(135deg, #000 0%, #1a1a1a 100%);
+            color: white;
+            padding: 60px 20px;
+        }
+        
+        .benefits-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .benefits h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .benefit-item {
+            background: rgba(255, 107, 53, 0.1);
+            padding: 25px;
+            border-radius: 10px;
+            border: 2px solid #ff6b35;
+            text-align: center;
+        }
+        
+        .benefit-item h3 {
+            color: #ff6b35;
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+        
+        .benefit-item p {
+            color: #ddd;
+            font-size: 15px;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background: white;
+            padding: 60px 20px;
+        }
+        
+        .testimonials-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .testimonials h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 50px;
+            color: #000;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        
+        .testimonial-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border-top: 4px solid #ff6b35;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .stars {
+            color: #ff6b35;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        
+        .testimonial-text {
+            color: #666;
+            margin-bottom: 15px;
+            font-style: italic;
+            line-height: 1.6;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            color: #000;
+            font-size: 16px;
+        }
+        
+        /* Order Form Section */
+        .order-section {
+            background: linear-gradient(135deg, #ff6b35 0%, #ff5722 100%);
+            color: white;
+            padding: 60px 20px;
+        }
+        
+        .order-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .order-section h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        
+        .order-subtitle {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-family: inherit;
+            background: white;
+            color: #333;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .submit-button {
+            width: 100%;
+            background: #000;
+            color: white;
+            border: none;
+            padding: 16px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+        
+        .submit-button:hover {
+            background: #1a1a1a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        .success-message {
+            display: none;
+            background: #4caf50;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        /* Footer */
+        footer {
+            background: #000;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+            text-align: right;
+        }
+        
+        .footer-section h3 {
+            color: #ff6b35;
+            margin-bottom: 15px;
+        }
+        
+        .footer-section p {
+            color: #ccc;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            color: #999;
+            font-size: 14px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .hero-subtitle {
+                font-size: 18px;
+            }
+            
+            .price-tag {
+                font-size: 28px;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+        
+        /* Urgency Badge */
+        .urgency-badge {
+            background: #ff6b35;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 20px 0;
+            font-weight: bold;
+            animation: blink 1.5s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">🔥 نايك دوبل فاس</div>
+            <div class="free-shipping">✓ توصيل مجاني</div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>جاكيت نايك دوبل فاس</h1>
+            <p class="hero-subtitle">الجاكيت الثنائي الوجه - أسود من الخارج وأبيض ناعم من الداخل</p>
+            <p class="hero-subtitle">مريح • دافئ • عملي • احترافي</p>
+            <div class="price-tag">249 درهم فقط</div>
+            <div class="urgency-badge">⏰ عرض محدود - اطلب الآن!</div>
+            <button class="cta-button" onclick="document.getElementById('order-form').scrollIntoView({behavior: 'smooth'})">
+                اطلب الآن
+            </button>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <h2>معرض الصور</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="IMG-20251017-WA0025_20251103_012751_0003.jpg" alt="جاكيت نايك دوبل فاس - الأمام">
+                <div class="gallery-caption">الوجه الأسود</div>
+            </div>
+            <div class="gallery-item">
+                <img src="IMG-20251017-WA0033_20251103_012751_0004.jpg" alt="جاكيت نايك - الداخل الناعم">
+                <div class="gallery-caption">الوجه الأبيض الناعم</div>
+            </div>
+            <div class="gallery-item">
+                <img src="IMG-20251017-WA0023(1)_20251103_012751_0002.jpg" alt="جاكيت نايك - التفاصيل">
+                <div class="gallery-caption">التفاصيل الفاخرة</div>
+            </div>
+            <div class="gallery-item">
+                <img src="IMG-20251017-WA0022_20251103_012751_0001.jpg" alt="جاكيت نايك - الملمس">
+                <div class="gallery-caption">الملمس الفاخر</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="features-content">
+            <h2>مميزات المنتج</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>تصميم ثنائي الوجه</h3>
+                    <p>أسود احترافي من الخارج وأبيض ناعم من الداخل - جاكيت واحد بمظهرين مختلفين!</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌡️</div>
+                    <h3>دفء عالي</h3>
+                    <p>حشوة عالية الجودة توفر دفء استثنائي في الطقس البارد والمعتدل</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👔</div>
+                    <h3>احترافي وعملي</h3>
+                    <p>يناسب جميع المناسبات - من الرياضة إلى العمل إلى اللقاءات الاجتماعية</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>جودة عالية</h3>
+                    <p>مصنوع من أفضل المواد - نايك الأصلية مع ضمان الجودة</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🧵</div>
+                    <h3>ملمس ناعم</h3>
+                    <p>الداخل الناعم يوفر راحة عالية جداً طول اليوم</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📦</div>
+                    <h3>توصيل مجاني</h3>
+                    <p>توصيل سريع وآمن مجاني لجميع أنحاء البلاد</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="benefits-content">
+            <h2>لماذا تختار جاكيت نايك دوبل فاس؟</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <h3>💰 سعر منافس</h3>
+                    <p>أفضل سعر في السوق لمنتج بهذه الجودة والمواصفات</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>⚡ توصيل سريع</h3>
+                    <p>توصيل في 24-48 ساعة إلى باب منزلك</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>🛡️ ضمان الجودة</h3>
+                    <p>منتج أصلي 100% مع ضمان الجودة والاستبدال</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>👥 خدمة عملاء</h3>
+                    <p>فريق دعم متاح 24/7 للإجابة على جميع استفساراتك</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>🔄 سياسة الإرجاع</h3>
+                    <p>إرجاع مجاني خلال 30 يوم إذا لم تكن راضياً</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>🎁 عروض خاصة</h3>
+                    <p>احصل على خصومات عند شراء أكثر من جاكيت</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="testimonials-content">
+            <h2>آراء العملاء الراضين</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"منتج رائع جداً! الجودة عالية والتوصيل سريع. أنصح الجميع بشرائه."</p>
+                    <p class="testimonial-author">- محمد أحمد</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"أحب أن أرتديه كل يوم! مريح جداً ودافئ. الوجهان جميلان جداً."</p>
+                    <p class="testimonial-author">- فاطمة علي</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"السعر ممتاز مقابل الجودة. لم أتوقع أن يكون بهذا الروعة!"</p>
+                    <p class="testimonial-author">- عمر حسن</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section class="order-section" id="order-form">
+        <div class="order-content">
+            <h2>اطلب الآن</h2>
+            <p class="order-subtitle">ملء البيانات أدناه وسنتواصل معك فوراً</p>
+            
+            <div class="success-message" id="successMessage">
+                ✓ تم استقبال طلبك بنجاح! سنتواصل معك قريباً على Telegram
+            </div>
+            
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="name">الاسم الكامل *</label>
+                    <input type="text" id="name" name="name" required placeholder="أدخل اسمك الكامل">
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">رقم الهاتف *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="مثال: 0604971625">
+                    </div>
+                    <div class="form-group">
+                        <label for="city">المدينة *</label>
+                        <input type="text" id="city" name="city" required placeholder="أدخل مدينتك">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">العنوان التفصيلي *</label>
+                    <input type="text" id="address" name="address" required placeholder="شارع، رقم المنزل، الحي">
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="size">القياس *</label>
+                        <select id="size" name="size" required>
+                            <option value="">اختر القياس</option>
+                            <option value="M">M (متوسط)</option>
+                            <option value="L">L (كبير)</option>
+                            <option value="XL">XL (كبير جداً)</option>
+                            <option value="XXL">XXL (كبير جداً جداً)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="color">اللون *</label>
+                        <select id="color" name="color" required>
+                            <option value="">اختر اللون</option>
+                            <option value="أسود">أسود (الخارج)</option>
+                            <option value="أبيض">أبيض (الداخل)</option>
+                            <option value="كلاهما">كلاهما (الثنائي)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-button">إرسال الطلب</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <div class="footer-section">
+                    <h3>معلومات التواصل</h3>
+                    <p>📞 رقم الهاتف: 0604971625</p>
+                    <p>📧 البريد الإلكتروني: contact@nike-jacket.com</p>
+                    <p>💬 Telegram: @nike_jacket_store</p>
+                </div>
+                <div class="footer-section">
+                    <h3>سياسات المتجر</h3>
+                    <p>✓ توصيل مجاني</p>
+                    <p>✓ إرجاع خلال 30 يوم</p>
+                    <p>✓ ضمان الجودة</p>
+                </div>
+                <div class="footer-section">
+                    <h3>المميزات</h3>
+                    <p>✓ منتج أصلي 100%</p>
+                    <p>✓ جودة عالية</p>
+                    <p>✓ سعر منافس</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 جاكيت نايك دوبل فاس. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const TELEGRAM_BOT_TOKEN = '8387473741:AAGHOI-oS7HXYFPSKfBmzotZ2PGCGNxhJiU';
+        const TELEGRAM_CHAT_ID = '6781508116';
+
+        document.getElementById('orderForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const city = document.getElementById('city').value;
+            const address = document.getElementById('address').value;
+            const size = document.getElementById('size').value;
+            const color = document.getElementById('color').value;
+
+            const message = `
+🛍️ طلب جديد من جاكيت نايك دوبل فاس
+
+👤 الاسم: ${name}
+📞 الهاتف: ${phone}
+🏙️ المدينة: ${city}
+📍 العنوان: ${address}
+📏 القياس: ${size}
+🎨 اللون: ${color}
+
+⏰ التاريخ: ${new Date().toLocaleString('ar-EG')}
+            `;
+
+            try {
+                const response = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        chat_id: TELEGRAM_CHAT_ID,
+                        text: message,
+                        parse_mode: 'HTML'
+                    })
+                });
+
+                if (response.ok) {
+                    document.getElementById('successMessage').style.display = 'block';
+                    document.getElementById('orderForm').reset();
+                    
+                    setTimeout(() => {
+                        document.getElementById('successMessage').style.display = 'none';
+                    }, 5000);
+                } else {
+                    alert('حدث خطأ في إرسال الطلب. يرجى المحاولة مرة أخرى.');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('حدث خطأ في الاتصال. يرجى التحقق من الاتصال بالإنترنت.');
+            }
+        });
+    </script>
+</body>
+</html>
